@@ -1,0 +1,2 @@
+"解释器路径" link.py(或者auth.py)的文件路径
+pause
