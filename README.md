@@ -14,10 +14,14 @@ auth.py 仅实现了登陆（需要在已连接ahu.portal的情况使用）。
 ## 原理
 ahu.portal的登陆是向服务器发送GET请求。
 
-通过解析发送的url可知，我们需要账号、密码、mac、ip。
+通过解析发送的url可知，我们需要账号、密码、mac、ip、login_path、wlan_ac_ip
 
 ### 通过使用socket获取ip
 
 ### 通过使用netifaces获取mac
 
 一些简单的方法在已连接蓝牙的情况下，会出现问题。
+
+### 通过使用requests 向服务器发送GET请求，发送后即可完成登陆
+
+### 但是无法知晓login_path的确定方法，获取wlan_ac_ip也较为困难
