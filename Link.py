@@ -10,7 +10,7 @@ try:
     import time
 except ImportError:
     try:
-        command_to_execute = "pip install netifaces socket subprocess request || easy_install netifaces socket subprocess request"
+        command_to_execute = "pip install netifaces"
         os.system(command_to_execute)
     except OSError:
         print ("Can NOT install , Aborted!")
